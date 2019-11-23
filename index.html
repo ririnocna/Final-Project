@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Alata&display=swap" rel="stylesheet">
+
+  <!-- My CSS -->
+  <link rel="stylesheet" href="style.css">
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <title>Recipes Daily Update</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div class="row navbar-recipe pt-3">
+    <div class="col-3 text-center">
+
+      <a class="navbar-text" href="#">All Recipes</a>
+    </div>
+    <div class="col-9 text-right">
+
+      <div class="navbar-nav" style="display: inline-block">
+        <a class="navbar-text nav-item nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="navbar-text nav-item nav-link" href="#Favorites">Favorites</a>
+        <a class="navbar-text nav-item nav-link" href="#Recipes">Recipes</a>
+        <a class="navbar-text nav-item nav-link" href="#About">About</a>
+        <a class="navbar-text nav-item nav-link" href="#">Contact</a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Akhir Navbar -->
+
+  <!-- Jumbotron -->
+  <div class="jumbotron jumbotron-fluid" style="margin-bottom: 0">
+    <div class="container">
+      <br>
+      <br>
+      <br>
+      <h1 class="display-4">Delicious recipes<span></span></h1>
+      <p class="text-center text-white lead">Daily new recipes and cooking tips</p>
+    </div>
+  </div>
+  <section id="Favorites" class="orange-fade p-5 margin-top-xl pos-r">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h2 class="text-center font-weight text-black">Most Popular Categories</h2>
+          <h2 class="text-center font-weight text-black">Be sure not to miss out the categories of these most popular
+            categories. Enjoy trying them out!</h2>
+          <p></p>
+          <div class="mt-5 row">
+            <div class="col-3"></div>
+            <div class="col-6">
+              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="carousel-img" src="img/French-Toast breakfast.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="carousel-img" src="img/dessert2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="carousel-img" src="img/cookies.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="tre"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+            <div class="col-3"></div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <section>
+    <br>
+    <div class="row" id="Recipes">
+      <div class="col text-center">
+        <h1 style="padding-top: 20;">LUNCH</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-3 text-center" style="padding: 24px">
+        <div class="card">
+          <img style="height: 250px; object-fit: cover;" src="img/honey-garlic-shrimp-5.jpg" class="card-img-top"
+            alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Honey Garlic Shrimp</h5>
+            <p class="card-text">20 Minutes</p>
+            <button type="button" class="btn btn-primary btn-brown" data-toggle="modal" data-target="#modalLunch">
+              View Recipe
+            </button>
+            <div class="modal fade" id="modalLunch" tabindex="-1" role="dialog" aria-labelledby="ModalLunch"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="ModalLunch">
+                      Honey Garlic Shrimp
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body text-left">
+                    <div>Bahan:</div>
+                    <div>1/3 gelas madu</div>
+                    <div>1/4 cangkir kecap (saya menggunakan sodium dikurangi)</div>
+                    <div>1 sendok makan bawang putih cincang</div>
+                    <div>1 sendok teh jahe segar cincang</div>
+                    <div>1 lb udang setengah matang, dikupas & dibagikan</div>
+                    <div>2 sendok teh minyak zaitun</div>
+                    <br>
+                    <div>Langkah-langkah:</div>
+                    <div>Kocok madu, kecap, bawang putih, dan jahe (jika digunakan) bersama-sama dalam mangkuk sedang
+                    </div>
+                    <div>Tempatkan udang di dalam kantung besar atau tupperware. Tuang 1/2 campuran rendaman di atasnya,
+                      kocok atau aduk rata, lalu biarkan udang direndam dalam lemari es selama 15 menit atau hingga 8-12
+                      jam, tutupi dan dinginkan sisa rendaman</div>
+                    <div>Panaskan minyak zaitun dalam wajan di atas api sedang-tinggi. Tempatkan udang di wajan (Buang
+                      rendaman bekas)</div>
+                    <div>Masak udang di satu sisi sampai berwarna merah muda - sekitar 45 detik - lalu balikkan udang.
+                      Tuang sisa bumbu dan masak semuanya sampai udang matang, sekitar 1 menit</div>
+                    <div>Sajikan udang dengan saus bumbu yang dimasak dan hiasan bawang hijau. Saus ini sangat baik
+                      untuk nasi merah dan sayuran kukus.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-3  text-center" style="padding: 25px">
+        <div class="card">
+          <img style="height: 250px; object-fit: cover;" src="img/chicken.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Roasted Lemon Chicken</h5>
+            <p class="card-text">40 Minutes</p>
+            <button type="button" class="btn btn-primary btn-brown" data-toggle="modal" data-target="#modalChicken">
+              View Recipe
+            </button>
+            <div class="modal fade" id="modalChicken" tabindex="-1" role="dialog" aria-labelledby="modalChicken"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="modalChicken">
+                      Roasted Lemon Chicken
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body text-left">
+                    <div>Bahan:</div>
+                    <div>6 paha ayam dengan tulang dan kulit</div>
+                    <div>Garam dan lada hitam yang baru ditumbuk</div>
+                    <div>¼ cangkir minyak zaitun</div>
+                    <div>1 1/2 pon kentang 680g dipotong menjadi potongan 1 inci</div>
+                    <div>1 lemon (diiris)</div>
+                    <div>10 siung bawang putih (dikupas)</div>
+                    <div>¼ cangkir daun ketumbar cincang atau peterseli</div>
+                    <br>
+                    <div>Langkah-langkah:</div>
+                    <div>Panaskan oven Anda hingga 425 derajat F, dan bumbui paha ayam dengan garam dan merica. Panaskan
+                      minyak zaitun dalam wajan panggang di atas dua pembakar dengan api sedang.</div>
+                    <div>Bakar bagian kulit ayam di atas panggangan. Setelah paha ayam terbakar sekitar 5-7 menit,
+                      balikkan. Tambahkan kentang dan aduk dalam minyak. Tambahkan irisan lemon dan siung bawang putih,
+                      aduk semuanya jadi kentang dan bawang putih dilapisi minyak zaitun.</div>
+                    <div>Pindahkan ayam ke oven dan masak selama 30 menit lagi, atau sampai ayam matang dan kentang
+                      empuk. Angkat dari oven dan aduk bumbu. Sajikan.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-3  text-center" style="padding: 25px">
+        <div class="card">
+          <img style="height: 250px; object-fit: cover;" src="img/BEEF2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Beef Bourguignon</h5>
+            <p class="card-text">45 Minutes</p>
+            <button type="button" class="btn btn-primary btn-brown" data-toggle="modal" data-target="#modalBeef">
+              View Recipe
+            </button>
+            <div class="modal fade" id="modalBeef" tabindex="-1" role="dialog" aria-labelledby="modalBeef"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="modalBeef">
+                      Beef Bourguignon
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body text-left">
+                    <div>Bahan:</div>
+                    <div>1 sdm minyak zaitun</div>
+                    <div>1 kg Daging sapi rebus</div>
+                    <div>200g Daging asap asap</div>
+                    <div>4 siung bawang putih dikupas dan dihancurkan</div>
+                    <div>450g Bawang, 5 wortel</div>
+                    <div>400g Jamur kancing</div>
+                    <div>350ml Stok daging sapi</div>
+                    <div>3 sdm pure tomat</div>
+                    <div>Garam dan merica</div>
+                    <div>3 sdm tepung jagung</div>
+                    <div>Peterseli cincang segar untuk disajikan.</div>
+                    <br>
+                    <div>Langkah-langkah:</div>
+                    <div>Tambahkan bawang putih, bawang bombay, wortel, dan jamur, lalu goreng selama beberapa menit
+                      sampai kecokelatan</div>
+                    <div>Masukkan kembali daging sapi ke dalam wajan, kaldu sapi, thyme kering, pure tomat dan banyak
+                      garam dan merica. Aduk semuanya dengan baik.</div>
+                    <div>Masak selama 45 menit dan ketika waktunya habis, cepat lepaskan tekanannya.</div>
+                    <div>Sendok satu atau dua sendok jus dari wajan ke dalam mangkuk kecil dan aduk tepung jagung untuk
+                      membuat pasta halus tanpa benjolan. Tambahkan kembali ke dalam panci presto dan aduk rata.</div>
+                    <div>Biarkan gelembung ini mengental selama 5 menit dan sajikan.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-3  text-center" style="padding: 25px">
+        <div class="card">
+          <img style="height: 250px; object-fit: cover;" src="img/salmon2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Baked Salmon</h5>
+            <p class="card-text">30 Minutes</p>
+            <button type="button" class="btn btn-primary btn-brown" data-toggle="modal" data-target="#modalSalmon">
+              View Recipe
+            </button>
+          </div>
+        </div>
+      </div>
+  </section>
+  <section>
+  </section>
+  <section>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col text-center">
+        <h1 style="padding-top: 20;">DESSERT</h1>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-3 text-center" style="padding: 24px">
+        <div class="card">
+          <img style="height: 250px; object-fit: cover;" src="img/dess1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Slutty Cheesecake Bars</h5>
+            <p class="card-text">3 Hours 55 Minutes</p>
+            <button type="button" class="btn btn-primary btn-brown" data-toggle="modal" data-target="#modalLunch">
+              View Recipe
+            </button>
+            <div class="modal fade" id="modalLunch" tabindex="-1" role="dialog" aria-labelledby="ModalLunch"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="ModalLunch">
+                      Honey Garlic Shrimp
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body text-left">
+                    <div>Bahan:</div>
+                    <div>1/3 gelas madu</div>
+                    <div>1/4 cangkir kecap (saya menggunakan sodium dikurangi)</div>
+                    <div>1 sendok makan bawang putih cincang</div>
+                    <div>1 sendok teh jahe segar cincang</div>
+                    <div>1 lb udang setengah matang, dikupas & dibagikan</div>
+                    <div>2 sendok teh minyak zaitun</div>
+                    <br>
+                    <div>Langkah-langkah:</div>
+                    <div>Kocok madu, kecap, bawang putih, dan jahe (jika digunakan) bersama-sama dalam mangkuk sedang
+                    </div>
+                    <div>Tempatkan udang di dalam kantung besar atau tupperware. Tuang 1/2 campuran rendaman di atasnya,
+                      kocok atau aduk rata, lalu biarkan udang direndam dalam lemari es selama 15 menit atau hingga 8-12
+                      jam, tutupi dan dinginkan sisa rendaman</div>
+                    <div>Panaskan minyak zaitun dalam wajan di atas api sedang-tinggi. Tempatkan udang di wajan (Buang
+                      rendaman bekas)</div>
+                    <div>Masak udang di satu sisi sampai berwarna merah muda - sekitar 45 detik - lalu balikkan udang.
+                      Tuang sisa bumbu dan masak semuanya sampai udang matang, sekitar 1 menit</div>
+                    <div>Sajikan udang dengan saus bumbu yang dimasak dan hiasan bawang hijau. Saus ini sangat baik
+                      untuk nasi merah dan sayuran kukus.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-3 text-center" style="padding: 24px">
+        <div class="card">
+          <img style="height: 250px; object-fit: cover;" src="img/cookies.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Chocolate Chips Cookies</h5>
+            <p class="card-text">1 Hours 15 Minutes</p>
+            <button type="button" class="btn btn-primary btn-brown" data-toggle="modal" data-target="#modalLunch">
+              View Recipe
+            </button>
+            <div class="modal fade" id="modalLunch" tabindex="-1" role="dialog" aria-labelledby="ModalLunch"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="ModalLunch">
+                      Honey Garlic Shrimp
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body text-left">
+                    <div>Bahan:</div>
+                    <div>1/3 gelas madu</div>
+                    <div>1/4 cangkir kecap (saya menggunakan sodium dikurangi)</div>
+                    <div>1 sendok makan bawang putih cincang</div>
+                    <div>1 sendok teh jahe segar cincang</div>
+                    <div>1 lb udang setengah matang, dikupas & dibagikan</div>
+                    <div>2 sendok teh minyak zaitun</div>
+                    <br>
+                    <div>Langkah-langkah:</div>
+                    <div>Kocok madu, kecap, bawang putih, dan jahe (jika digunakan) bersama-sama dalam mangkuk sedang
+                    </div>
+                    <div>Tempatkan udang di dalam kantung besar atau tupperware. Tuang 1/2 campuran rendaman di atasnya,
+                      kocok atau aduk rata, lalu biarkan udang direndam dalam lemari es selama 15 menit atau hingga 8-12
+                      jam, tutupi dan dinginkan sisa rendaman</div>
+                    <div>Panaskan minyak zaitun dalam wajan di atas api sedang-tinggi. Tempatkan udang di wajan (Buang
+                      rendaman bekas)</div>
+                    <div>Masak udang di satu sisi sampai berwarna merah muda - sekitar 45 detik - lalu balikkan udang.
+                      Tuang sisa bumbu dan masak semuanya sampai udang matang, sekitar 1 menit</div>
+                    <div>Sajikan udang dengan saus bumbu yang dimasak dan hiasan bawang hijau. Saus ini sangat baik
+                      untuk nasi merah dan sayuran kukus.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-3 text-center" style="padding: 24px">
+        <div class="card">
+          <img style="height: 250px; object-fit: cover;" src="img/dess3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Pecan Toffee Bars</h5>
+            <p class="card-text">45 Minutes</p>
+            <button type="button" class="btn btn-primary btn-brown" data-toggle="modal" data-target="#modalLunch">
+              View Recipe
+            </button>
+            <div class="modal fade" id="modalLunch" tabindex="-1" role="dialog" aria-labelledby="ModalLunch"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="ModalLunch">
+                      Honey Garlic Shrimp
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body text-left">
+                    <div>Bahan:</div>
+                    <div>1/3 gelas madu</div>
+                    <div>1/4 cangkir kecap (saya menggunakan sodium dikurangi)</div>
+                    <div>1 sendok makan bawang putih cincang</div>
+                    <div>1 sendok teh jahe segar cincang</div>
+                    <div>1 lb udang setengah matang, dikupas & dibagikan</div>
+                    <div>2 sendok teh minyak zaitun</div>
+                    <br>
+                    <div>Langkah-langkah:</div>
+                    <div>Kocok madu, kecap, bawang putih, dan jahe (jika digunakan) bersama-sama dalam mangkuk sedang
+                    </div>
+                    <div>Tempatkan udang di dalam kantung besar atau tupperware. Tuang 1/2 campuran rendaman di atasnya,
+                      kocok atau aduk rata, lalu biarkan udang direndam dalam lemari es selama 15 menit atau hingga 8-12
+                      jam, tutupi dan dinginkan sisa rendaman</div>
+                    <div>Panaskan minyak zaitun dalam wajan di atas api sedang-tinggi. Tempatkan udang di wajan (Buang
+                      rendaman bekas)</div>
+                    <div>Masak udang di satu sisi sampai berwarna merah muda - sekitar 45 detik - lalu balikkan udang.
+                      Tuang sisa bumbu dan masak semuanya sampai udang matang, sekitar 1 menit</div>
+                    <div>Sajikan udang dengan saus bumbu yang dimasak dan hiasan bawang hijau. Saus ini sangat baik
+                      untuk nasi merah dan sayuran kukus.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <h1></h1>
+      <div id="About"
+        style="background-image: url(img/ww.jpg) ; margin-top:24px; background-repeat: no-repeat; background-size: 100%; height: 600px; padding: 100px;">
+        <div style="background-color: white; width: 50%; margin: auto; padding: 50px;">
+          <h1 style="text-align: center;">ABOUT US</h1>
+          <p style="text-align: center;">
+            Share information with you about Various Food Recipes, baking recipes and other cooking recipes. We hope
+            that the Recipe Information we provide on the site can be useful for those of you who are looking for
+            reference guides for cooking food for family or friends. And useful for society in general.</p>
+        </div>
+      </div>
+      <div id="sectionContact">
+        <div class="row">
+          <div class="col-sm-12">
+            <h1 style="text-align: center; color: black; padding-top: 100px; font-size: 80px;">CONTACT US
+            </h1>
+            <p style="text-align: center; padding-top: 15px; color: black;">ADDRESS: JL. TANJUNG DUREN UTARA A21 <br>
+              TEL: 123-456-7890 | RIRINOCNASYAFERA@GMAIL.COM</p>
+            <p style="text-align: center; padding-top: 50px; color: black;">Subscribe For Updates and
+              Promotions</p>
+            <form class="text-center" action="https://formspree.io/ririnocnasyafera@gmail.com" method="POST">
+              <label>
+                Your Email:
+                <input type="email" name="_replyto">
+              </label>
+              <input type="submit" value="Send">
+            </form>
+
+          </div>
+        </div>
+        </form>
+      </div>
+    </div>
+    </div>
+    </div>
+
+    </div>
+    </div>
+    </form>
+    </div>
+  </section>
+
+</body>
+
+</html>
